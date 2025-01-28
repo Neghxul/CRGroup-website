@@ -1,0 +1,157 @@
+body {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-self: center;
+  background: purple;
+  padding-top: 100px;
+}
+
+#root {
+  max-width: 100vw;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+  text-align: center;
+  color: white;
+}
+
+.header-container {
+  width: 100%;
+  background-color: grey;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+.header-container.visible {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.header-container.hidden {
+  transform: translateY(-100%);
+  opacity: 0;
+}
+
+.logo {
+  width: 200px;
+  height: 100%;
+  border: 2px solid white;
+  align-content: center;
+}
+
+.logo img {
+  width: 100%;
+}
+
+.social-media {
+  width: 200px;
+  height: 100%;
+  border: 2px solid white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 26px;
+}
+
+.navbar-container {
+  width: 100%;
+  background-color: black;
+  height: 50px;
+  position: fixed;
+  left: 0;
+  z-index: 999;
+  border-top: none;
+  transition: top 0.3s ease-in-out;
+}
+
+.navbar-container.fixed {
+  top: 0;
+}
+
+.navbar-container.below-header {
+  top: 50px;
+}
+
+.navbar-menu {
+  display: flex;
+  height: 100%;
+}
+
+.menu-box {
+  width: 100px;
+  height: 100%;
+  align-content: center;
+  border: 2px solid red;
+}
+
+.body-container {
+  background-color: purple;
+  display: flex;
+  flex-direction: column;
+}
+
+.body-container {
+  width: 100%;
+}
+
+.container {
+  width: 100%;
+  height: 500px;
+  
+}
+
+.main-carousel-container {
+  margin-top: 10px;
+  height: auto;
+}
+
+.grid-container {
+  display: grid;
+  gap:10px;
+  padding: 10px 0 5px 0;
+  grid-template-columns: repeat(3, 2fr);
+
+}
+
+.grid-container-2 {
+  display: grid;
+  gap:10px;
+  padding: 5px 0  ;
+  grid-template-columns: repeat(2, 2fr);
+
+}
+
+.grid-container-3 {
+  display: grid;
+  gap:10px;
+  padding: 5px 0 10px 0;
+  grid-template-columns: repeat(3, 1fr);
+
+
+}
+
+.grid {
+  width: 100%;
+  height: calc(250px - 12.5px);
+  border: 2px solid red;
+  align-content: center;
+}
+
+.box-3 {
+  grid-column: 1 / 3;
+  grid-row: 2;
+}
+
+.footer-container {
+  background-color: green;
+  height: 60px;
+  align-content: center;
+}

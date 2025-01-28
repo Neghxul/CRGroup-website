@@ -4,6 +4,11 @@ import { FaFacebookSquare,
     FaTwitterSquare,
     FaInstagramSquare } from "react-icons/fa";
 
+import { Navbar, Nav, NavDropdown } from "react-bootstrap";
+
+    
+    
+
 const NavBar = () => {
 
     const [showHeader, setShowHeader] = useState(true);
@@ -40,6 +45,26 @@ const NavBar = () => {
                 <FaTwitterSquare /> 
             </div>
         </div>
+
+        {/*<Navbar bg="dark" variant="dark" expand="lg"
+        className={`navbar-container ${
+            isScrollingDown ? "fixed" : "below-header"
+          }`}>
+          <Navbar.Toggle aria-controls="navbar-nav" />
+          <Navbar.Collapse id="navbar-nav">
+            <Nav className="ml-auto">
+              <NavDropdown title="Opción 1" id="nav-dropdown">
+                <NavDropdown.Item href="#">Subopción 1</NavDropdown.Item>
+                <NavDropdown.Item href="#">Subopción 2</NavDropdown.Item>
+              </NavDropdown>
+              <NavDropdown title="Opción 2" id="nav-dropdown">
+                <NavDropdown.Item href="#">Subopción 1</NavDropdown.Item>
+                <NavDropdown.Item href="#">Subopción 2</NavDropdown.Item>
+              </NavDropdown>
+            </Nav>
+          </Navbar.Collapse>
+        </Navbar>*/}
+
         <div className={`navbar-container ${
           isScrollingDown ? "fixed" : "below-header"
         }`}>

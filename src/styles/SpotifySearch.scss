@@ -1,0 +1,86 @@
+.spotify-search {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  
+    h1 {
+      text-align: center;
+      color: #1db954;
+    }
+  
+    .search-box {
+      display: flex;
+      gap: 10px;
+      margin-bottom: 20px;
+  
+      input {
+        flex: 1;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 16px;
+      }
+  
+      button {
+        padding: 10px 20px;
+        background-color: #1db954;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+  
+        &:disabled {
+          background-color: #ccc;
+          cursor: not-allowed;
+        }
+      }
+    }
+  
+    .results {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+  
+      .track {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        padding: 10px;
+        background-color: #f9f9f9;
+        border-radius: 5px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        cursor: pointer;
+  
+        &:hover {
+          background-color: #f0f0f0;
+        }
+  
+        img {
+          width: 80px;
+          height: 80px;
+          border-radius: 5px;
+        }
+  
+        .track-info {
+          flex: 1;
+  
+          h3 {
+            margin: 0;
+            font-size: 18px;
+            color: #333;
+          }
+  
+          p {
+            margin: 5px 0;
+            color: #666;
+          }
+        }
+      }
+    }
+  
+    .spotify-player {
+      margin-top: 20px;
+    }
+  }

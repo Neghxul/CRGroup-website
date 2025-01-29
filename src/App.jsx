@@ -9,6 +9,8 @@ import ChatWidget from './components/ChatWidget';
 import ChatWidgetSecond from './components/ChatWidgetSecond';
 import ChatBot from './components/ChatBot';
 import QuoteRequestForm from './components/QuoteRequestForm'
+import UnsplashSearch from './components/UnsplashSearch';
+import SpotifySearch from './components/SpotifySearch';
 
 function App() {
   const [count, setCount] = useState(0)
@@ -67,6 +69,8 @@ Agrega información sobre tus almacenes o puntos de venta.
       </div>
       {/*<ChatWidget />
       <ChatWidgetSecond />*/}
+      <UnsplashSearch />
+      <SpotifySearch />
     </>
   )
 }
